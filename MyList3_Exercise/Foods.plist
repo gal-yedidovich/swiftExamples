@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Appetizers</key>
+	<array>
+		<string>Pimiento</string>
+		<string>Ravioli</string>
+		<string>Guacamole</string>
+		<string>Cannellini</string>
+		<string>Spiced Olives</string>
+		<string>Caviar Rounds</string>
+	</array>
+	<key>Fruits</key>
+	<array>
+		<string>Persimmon</string>
+		<string>Banana</string>
+		<string>Apple</string>
+		<string>Orange</string>
+		<string>Peach</string>
+	</array>
+	<key>Vegetables</key>
+	<array>
+		<string>Cabage</string>
+		<string>Tomato</string>
+		<string>Cucumber</string>
+		<string>Radish</string>
+	</array>
+	<key>Candies</key>
+	<array>
+		<string>Kitkat</string>
+		<string>Lolipop</string>
+		<string>Marshmallow</string>
+	</array>
+</dict>
+</plist>

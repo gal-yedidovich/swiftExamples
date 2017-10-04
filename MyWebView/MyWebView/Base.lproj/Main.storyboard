@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHN-81-7zk">
+                                <rect key="frame" x="16" y="120" width="343" height="527"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3P2-T2-e9b">
+                                <rect key="frame" x="43" y="20" width="289" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OG-pb-8g7">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
+                                        <state key="normal" title="innerData"/>
+                                        <connections>
+                                            <action selector="innerData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dJf-E9-Pxr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oZ-N7-CTp">
+                                        <rect key="frame" x="71" y="0.0" width="52" height="30"/>
+                                        <state key="normal" title="locFiles"/>
+                                        <connections>
+                                            <action selector="locFiles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGd-pn-GHK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIN-vT-TCS">
+                                        <rect key="frame" x="127" y="0.0" width="45" height="30"/>
+                                        <state key="normal" title="locNet"/>
+                                        <connections>
+                                            <action selector="locNet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8B-FS-jAb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2I-sg-foc">
+                                        <rect key="frame" x="176" y="0.0" width="51" height="30"/>
+                                        <state key="normal" title="remNet"/>
+                                        <connections>
+                                            <action selector="interNet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sSl-4s-yXW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTI-nC-e1Q">
+                                        <rect key="frame" x="231" y="0.0" width="58" height="30"/>
+                                        <state key="normal" title="safariVC"/>
+                                        <connections>
+                                            <action selector="safariVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ItC-c1-ary"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="vvA-ZB-GVg">
+                                <rect key="frame" x="16" y="51" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Chicken"/>
+                                    <segment title="Pasta"/>
+                                    <segment title="Pizza"/>
+                                </segments>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="5nF-7L-KHz">
+                                <rect key="frame" x="14" y="80" width="300" height="31"/>
+                                <connections>
+                                    <action selector="qntyChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="o0J-3P-vmu"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2J0-BS-Ncf">
+                                <rect key="frame" x="320" y="85" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5nF-7L-KHz" secondAttribute="trailing" constant="47" id="04K-la-fdG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FHN-81-7zk" secondAttribute="bottom" constant="20" id="1pL-PJ-cG1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2J0-BS-Ncf" secondAttribute="trailing" constant="-3" id="3dG-XR-ieh"/>
+                            <constraint firstItem="FHN-81-7zk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Ah4-kg-293"/>
+                            <constraint firstItem="2J0-BS-Ncf" firstAttribute="leading" secondItem="5nF-7L-KHz" secondAttribute="trailing" constant="8" id="DT7-hu-U5N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FHN-81-7zk" secondAttribute="trailing" id="T6X-cH-8Ax"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5nF-7L-KHz" secondAttribute="leading" id="WhF-dY-dGC"/>
+                            <constraint firstItem="3P2-T2-e9b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YIL-Lk-uZm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="FHN-81-7zk" secondAttribute="leading" id="c8V-BE-mz5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vvA-ZB-GVg" secondAttribute="trailing" id="lLH-Go-FIQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vvA-ZB-GVg" secondAttribute="leading" id="oL7-EA-aSy"/>
+                            <constraint firstItem="vvA-ZB-GVg" firstAttribute="top" secondItem="3P2-T2-e9b" secondAttribute="bottom" constant="1" id="puZ-Bx-cN8"/>
+                            <constraint firstItem="3P2-T2-e9b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qGr-3M-0aE"/>
+                            <constraint firstItem="5nF-7L-KHz" firstAttribute="top" secondItem="vvA-ZB-GVg" secondAttribute="bottom" constant="1" id="thR-eE-pbu"/>
+                            <constraint firstItem="2J0-BS-Ncf" firstAttribute="top" secondItem="vvA-ZB-GVg" secondAttribute="bottom" constant="6" id="uyl-gC-hwm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="foodsSgmnt" destination="vvA-ZB-GVg" id="6tn-cd-Cyj"/>
+                        <outlet property="qntyFeed" destination="2J0-BS-Ncf" id="6L6-ZM-mYm"/>
+                        <outlet property="webView" destination="FHN-81-7zk" id="1f1-26-nlh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136.80000000000001" y="88.605697151424295"/>
+        </scene>
+    </scenes>
+</document>

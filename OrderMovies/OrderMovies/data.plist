@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Deadpool</key>
+	<array>
+		<string>deadpool</string>
+		<string>A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that leaves him with accelerated healing powers and a quest for revenge.</string>
+	</array>
+	<key>Spy</key>
+	<array>
+		<string>spy</string>
+		<string>A desk-bound CIA analyst volunteers to go undercover to infiltrate the world of a deadly arms dealer, and prevent diabolical global disaster.</string>
+	</array>
+	<key>Jurassic world</key>
+	<array>
+		<string>jura</string>
+		<string>A new theme park is built on the original site of Jurassic Park. </string>
+	</array>
+	<key>San Adreas</key>
+	<array>
+		<string>sanAndr</string>
+		<string>In the aftermath of a massive earthquake in California, a rescue-chopper pilot makes a dangerous journey across the state in order to rescue his daughter.</string>
+	</array>
+	<key>Ted 2</key>
+	<array>
+		<string>ted</string>
+		<string>Newlywed couple Ted and Tami-Lynn want to have a baby, but in order to qualify to be a parent, Ted will have to prove he&apos;s a person in a court of law.</string>
+	</array>
+	<key>Tomorowland</key>
+	<array>
+		<string>tomorowland</string>
+		<string>Bound by a shared destiny, a teen bursting with scientific curiosity and a former boy-genius inventor embark on a mission to unearth the secrets of a place somewhere in time and space that exists in their collective memory.</string>
+	</array>
+	<key>Mad Max</key>
+	<array>
+		<string>madMax</string>
+		<string>In a stark desert landscape where humanity is broken, two rebels just might be able to restore order: Max, a man of action and of few words, and Furiosa, a woman of action who is looking to make it back to her childhood homeland</string>
+	</array>
+	<key>Planet of Apes</key>
+	<array>
+		<string>apes</string>
+		<string>A growing nation of genetically evolved apes led by Caesar is threatened by a band of human survivors of the devastating virus unleashed a decade earlier</string>
+	</array>
+</dict>
+</plist>

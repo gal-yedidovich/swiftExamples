@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="bombDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdM-Of-WaN">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <state key="normal" title="Drop">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="drop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hAd-JI-UVX"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOw-N8-fMo">
+                                <rect key="frame" x="58" y="20" width="63" height="30"/>
+                                <state key="normal" title="Detonate">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="detonate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YBG-bh-CRz"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b6t-Th-ZNI">
+                                <rect key="frame" x="238" y="20" width="97" height="29"/>
+                                <segments>
+                                    <segment title="Day"/>
+                                    <segment title="NIght"/>
+                                </segments>
+                                <connections>
+                                    <action selector="dayNight:" destination="vXZ-lx-hvc" eventType="valueChanged" id="QjM-gZ-tCJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="8qc-ey-Epr">
+                                <rect key="frame" x="16" y="102" width="112.5" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8qc-ey-Epr" secondAttribute="height" multiplier="1:1" id="Z6j-uo-cMx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-Qw-Hkk">
+                                <rect key="frame" x="0.0" y="58" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="pXL-lx-JKR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MOw-N8-fMo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="J66-U1-gTQ"/>
+                            <constraint firstItem="b6t-Th-ZNI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="W5T-ph-AG6"/>
+                            <constraint firstItem="pdM-Of-WaN" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="ZEe-HL-Re6"/>
+                            <constraint firstItem="8qc-ey-Epr" firstAttribute="top" secondItem="pdM-Of-WaN" secondAttribute="bottom" constant="52" id="dDM-Cj-v6T"/>
+                            <constraint firstItem="MOw-N8-fMo" firstAttribute="leading" secondItem="pdM-Of-WaN" secondAttribute="trailing" constant="8" id="eGP-ES-c1z"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8qc-ey-Epr" secondAttribute="leading" id="muq-fb-qLy"/>
+                            <constraint firstItem="pdM-Of-WaN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nE3-xZ-t3e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b6t-Th-ZNI" secondAttribute="trailing" constant="24" id="ne6-id-yL0"/>
+                            <constraint firstItem="UPd-Qw-Hkk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="s6a-HN-KuH"/>
+                            <constraint firstItem="UPd-Qw-Hkk" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="sgD-T0-MaU"/>
+                            <constraint firstItem="UPd-Qw-Hkk" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="twA-iO-6Zr"/>
+                            <constraint firstItem="8qc-ey-Epr" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.3" id="wzO-mh-8EP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detonateBtn" destination="MOw-N8-fMo" id="ZmA-LC-Ilh"/>
+                        <outlet property="dropBtn" destination="pdM-Of-WaN" id="No8-cD-Htu"/>
+                        <outlet property="stars" destination="UPd-Qw-Hkk" id="MWb-Do-IQj"/>
+                        <outlet property="sun" destination="8qc-ey-Epr" id="hpl-zA-3fT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="274"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stars" width="900" height="873"/>
+        <image name="sun" width="666" height="660"/>
+    </resources>
+</document>

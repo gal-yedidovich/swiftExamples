@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyFiles" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert some text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9qU-1X-rFk">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfi-hr-JSy">
+                                <rect key="frame" x="16" y="64" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjV-oJ-Sui">
+                                <rect key="frame" x="16" y="93" width="43" height="30"/>
+                                <state key="normal" title="delete"/>
+                                <connections>
+                                    <action selector="deleteIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vNh-xH-6XT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNe-Dq-RIE">
+                                <rect key="frame" x="67" y="93" width="30" height="30"/>
+                                <state key="normal" title="load"/>
+                                <connections>
+                                    <action selector="readIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8R5-FK-yLd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaq-it-DV5">
+                                <rect key="frame" x="105" y="93" width="32" height="30"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="writeIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oUw-zj-3Ch"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Eaq-it-DV5" firstAttribute="top" secondItem="pfi-hr-JSy" secondAttribute="bottom" constant="8" id="6ou-pB-GSJ"/>
+                            <constraint firstItem="9qU-1X-rFk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GFn-Z1-Xlx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="pfi-hr-JSy" secondAttribute="leading" id="Lf4-ob-5Fj"/>
+                            <constraint firstItem="pfi-hr-JSy" firstAttribute="top" secondItem="9qU-1X-rFk" secondAttribute="bottom" constant="14" id="Sn3-MU-Der"/>
+                            <constraint firstItem="NNe-Dq-RIE" firstAttribute="top" secondItem="pfi-hr-JSy" secondAttribute="bottom" constant="8" id="Uhd-hZ-8DI"/>
+                            <constraint firstItem="Eaq-it-DV5" firstAttribute="leading" secondItem="NNe-Dq-RIE" secondAttribute="trailing" constant="8" id="UmX-1p-zLM"/>
+                            <constraint firstItem="NNe-Dq-RIE" firstAttribute="leading" secondItem="YjV-oJ-Sui" secondAttribute="trailing" constant="8" id="WFx-Px-gVh"/>
+                            <constraint firstItem="YjV-oJ-Sui" firstAttribute="top" secondItem="pfi-hr-JSy" secondAttribute="bottom" constant="8" id="bCA-ci-27f"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="9qU-1X-rFk" secondAttribute="leading" id="btm-Rs-wsA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9qU-1X-rFk" secondAttribute="trailing" id="ldd-nz-EaH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="YjV-oJ-Sui" secondAttribute="leading" id="uew-RF-9tn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pfi-hr-JSy" secondAttribute="trailing" id="x1c-lx-n4D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="input" destination="9qU-1X-rFk" id="puh-7B-uym"/>
+                        <outlet property="output" destination="pfi-hr-JSy" id="cbN-kK-FCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="94.902548725637189"/>
+        </scene>
+    </scenes>
+</document>

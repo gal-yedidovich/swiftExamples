@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MGP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-j7-Tac" customClass="GBtn" customModule="MGP" customModuleProvider="target">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="recolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cp0-Gf-IQB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-S1-Vvw" customClass="GBtn" customModule="MGP" customModuleProvider="target">
+                                <rect key="frame" x="164" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="recolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lOw-V0-Va1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp8-4h-Rtz" customClass="GBtn" customModule="MGP" customModuleProvider="target">
+                                <rect key="frame" x="313" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="recolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rlF-Ig-z7O"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hau-ks-Dwf">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hau-ks-Dwf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1NJ-iU-RP0"/>
+                            <constraint firstItem="hau-ks-Dwf" firstAttribute="top" secondItem="wxN-S1-Vvw" secondAttribute="bottom" constant="18" id="3S5-Pn-3CZ"/>
+                            <constraint firstItem="kMf-j7-Tac" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5ZB-vQ-cyG"/>
+                            <constraint firstItem="wxN-S1-Vvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5nl-Si-kkw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wp8-4h-Rtz" secondAttribute="trailing" id="QCM-Vg-fin"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hau-ks-Dwf" secondAttribute="bottom" id="XBW-wg-dne"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kMf-j7-Tac" secondAttribute="leading" id="cZX-XZ-mWe"/>
+                            <constraint firstItem="Wp8-4h-Rtz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="eeO-zd-YD3"/>
+                            <constraint firstItem="wxN-S1-Vvw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="lw7-iX-thd"/>
+                            <constraint firstItem="hau-ks-Dwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ukE-B1-t9h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="kMf-j7-Tac" id="cK9-3X-2ca"/>
+                        <outlet property="btn2" destination="wxN-S1-Vvw" id="XYz-mR-k3m"/>
+                        <outlet property="btn3" destination="Wp8-4h-Rtz" id="NVv-Cc-CC1"/>
+                        <outlet property="section" destination="hau-ks-Dwf" id="zni-aB-uep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+</document>

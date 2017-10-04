@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyInputs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1sy-Uv-euz">
+                                <rect key="frame" x="14" y="57" width="347" height="31"/>
+                                <connections>
+                                    <action selector="sliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="3vC-E3-FJ3"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groot is awesome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75c-zG-XY9">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tp6-Ib-uaA">
+                                <rect key="frame" x="16" y="95" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="rv5-gs-dFS"/>
+                                </connections>
+                            </switch>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="62" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="4oc-RO-7f7">
+                                <rect key="frame" x="73" y="97" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lmk-LM-Reg"/>
+                                </connections>
+                            </stepper>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-U9-LrP">
+                                <rect key="frame" x="16" y="134" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Groot"/>
+                                    <segment title="Bubu"/>
+                                    <segment title="Shiri"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="UaM-N3-6Dz"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="75c-zG-XY9" secondAttribute="leading" id="9YW-dK-jef"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1sy-Uv-euz" secondAttribute="leading" id="B5Y-6L-mmg"/>
+                            <constraint firstItem="4oc-RO-7f7" firstAttribute="leading" secondItem="Tp6-Ib-uaA" secondAttribute="trailing" constant="8" id="DcA-eO-ceJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1mo-U9-LrP" secondAttribute="trailing" id="H8E-dW-aTR"/>
+                            <constraint firstItem="Tp6-Ib-uaA" firstAttribute="top" secondItem="1sy-Uv-euz" secondAttribute="bottom" constant="8" id="IHi-BQ-PHb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Tp6-Ib-uaA" secondAttribute="leading" id="RDy-1p-1dE"/>
+                            <constraint firstItem="75c-zG-XY9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UIS-5O-Br7"/>
+                            <constraint firstItem="1mo-U9-LrP" firstAttribute="top" secondItem="4oc-RO-7f7" secondAttribute="bottom" constant="8" id="dMK-hj-pwE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1sy-Uv-euz" secondAttribute="trailing" id="dfB-HG-xzh"/>
+                            <constraint firstItem="4oc-RO-7f7" firstAttribute="top" secondItem="1sy-Uv-euz" secondAttribute="bottom" constant="10" id="smh-Yk-QJR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1mo-U9-LrP" secondAttribute="leading" id="uLF-YU-3Xr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="75c-zG-XY9" secondAttribute="trailing" id="yBz-GC-vGI"/>
+                            <constraint firstItem="1sy-Uv-euz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="yHb-0S-Blz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feed" destination="75c-zG-XY9" id="DAY-mo-SgD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+</document>

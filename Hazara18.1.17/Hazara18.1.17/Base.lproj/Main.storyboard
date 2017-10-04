@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PIu-oR-YD0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hazara18_1_17" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-nj-D2G">
+                                <rect key="frame" x="0.0" y="28" width="375" height="29"/>
+                                <segments>
+                                    <segment title="La la land"/>
+                                    <segment title="Triple X"/>
+                                    <segment title="Logan"/>
+                                </segments>
+                                <connections>
+                                    <action selector="movieChose:" destination="BYZ-38-t0r" eventType="valueChanged" id="Sdt-V9-o4X"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCX-tM-jd0">
+                                <rect key="frame" x="19" y="99" width="337.5" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SCX-tM-jd0" secondAttribute="height" multiplier="16:9" id="BGt-vA-Gxf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BBb-nj-D2G" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7eB-TH-66g"/>
+                            <constraint firstItem="SCX-tM-jd0" firstAttribute="centerX" secondItem="BBb-nj-D2G" secondAttribute="centerX" id="Qmf-3P-VVV"/>
+                            <constraint firstItem="BBb-nj-D2G" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Rc6-dA-RHY"/>
+                            <constraint firstItem="SCX-tM-jd0" firstAttribute="top" secondItem="BBb-nj-D2G" secondAttribute="bottom" constant="43" id="XHc-Bm-L6O"/>
+                            <constraint firstItem="SCX-tM-jd0" firstAttribute="width" secondItem="BBb-nj-D2G" secondAttribute="width" multiplier="0.9" id="fsS-pk-oHz"/>
+                            <constraint firstItem="BBb-nj-D2G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kun-LU-5Ff"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Movies" id="kD0-Iq-Tj7"/>
+                    <connections>
+                        <outlet property="img" destination="SCX-tM-jd0" id="Q3D-Ex-2ej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="-55.322338830584712"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ldI-QV-Utq">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PIu-oR-YD0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Puv-Jb-eX6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="1TJ-Td-J8W"/>
+                        <segue destination="aNU-dW-Nfj" kind="relationship" relationship="viewControllers" id="aoB-MA-msr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jf-72-Zr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="284"/>
+        </scene>
+        <!--Lights-->
+        <scene sceneID="mNb-m7-S9j">
+            <objects>
+                <viewController id="aNU-dW-Nfj" customClass="LightsViewController" customModule="Hazara18_1_17" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sum-1L-8ao"/>
+                        <viewControllerLayoutGuide type="bottom" id="8yp-Yw-oQ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pxs-2d-jSy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6i8-hC-QKu">
+                                <rect key="frame" x="14" y="70" width="347" height="31"/>
+                                <connections>
+                                    <action selector="dimmer:" destination="aNU-dW-Nfj" eventType="valueChanged" id="439-CN-oO6"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-0A-aXM">
+                                <rect key="frame" x="14" y="108" width="347" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.83135809338808297" blue="0.096836152691115299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dimmer:" destination="aNU-dW-Nfj" eventType="valueChanged" id="tcZ-Vk-QL0"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vEQ-22-vNO">
+                                <rect key="frame" x="14" y="146" width="347" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.94828247810310884" green="0.13558899669531257" blue="0.15416147680152303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dimmer:" destination="aNU-dW-Nfj" eventType="valueChanged" id="mMC-BU-0gF"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZK-lI-ETN">
+                                <rect key="frame" x="16" y="196" width="343" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIB-I4-Gko">
+                                <rect key="frame" x="16" y="28" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onOff:" destination="aNU-dW-Nfj" eventType="valueChanged" id="A6U-78-ia9"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oZK-lI-ETN" firstAttribute="centerX" secondItem="vEQ-22-vNO" secondAttribute="centerX" id="8dS-fg-Q0D"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="DIB-I4-Gko" secondAttribute="leading" id="BHU-u3-Y7p"/>
+                            <constraint firstItem="8yp-Yw-oQ3" firstAttribute="top" secondItem="oZK-lI-ETN" secondAttribute="bottom" constant="20" id="F7d-41-yLm"/>
+                            <constraint firstItem="vEQ-22-vNO" firstAttribute="top" secondItem="f5S-0A-aXM" secondAttribute="bottom" constant="8" id="Fy6-Ei-h4f"/>
+                            <constraint firstItem="oZK-lI-ETN" firstAttribute="width" secondItem="vEQ-22-vNO" secondAttribute="width" id="Mvj-EX-PAk"/>
+                            <constraint firstItem="vEQ-22-vNO" firstAttribute="centerX" secondItem="f5S-0A-aXM" secondAttribute="centerX" id="Wye-KQ-ln1"/>
+                            <constraint firstItem="f5S-0A-aXM" firstAttribute="centerX" secondItem="6i8-hC-QKu" secondAttribute="centerX" id="XEh-7P-Kpl"/>
+                            <constraint firstItem="6i8-hC-QKu" firstAttribute="top" secondItem="DIB-I4-Gko" secondAttribute="bottom" constant="11" id="ZP8-t4-Soh"/>
+                            <constraint firstItem="DIB-I4-Gko" firstAttribute="top" secondItem="sum-1L-8ao" secondAttribute="bottom" constant="8" id="aD4-pU-yIm"/>
+                            <constraint firstItem="f5S-0A-aXM" firstAttribute="top" secondItem="6i8-hC-QKu" secondAttribute="bottom" constant="8" id="c3p-h8-BZR"/>
+                            <constraint firstItem="f5S-0A-aXM" firstAttribute="width" secondItem="6i8-hC-QKu" secondAttribute="width" id="dnc-ql-H1Y"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="6i8-hC-QKu" secondAttribute="leading" id="fg8-L1-epg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6i8-hC-QKu" secondAttribute="trailing" id="irS-6G-7Zb"/>
+                            <constraint firstItem="oZK-lI-ETN" firstAttribute="top" secondItem="vEQ-22-vNO" secondAttribute="bottom" constant="20" id="lES-Cf-v1O"/>
+                            <constraint firstItem="vEQ-22-vNO" firstAttribute="width" secondItem="f5S-0A-aXM" secondAttribute="width" id="rVa-So-7n3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lights" id="3Zk-DJ-pSh"/>
+                    <connections>
+                        <outlet property="blue" destination="6i8-hC-QKu" id="C4p-jq-uXQ"/>
+                        <outlet property="green" destination="f5S-0A-aXM" id="81k-6M-5fe"/>
+                        <outlet property="red" destination="vEQ-22-vNO" id="ycN-FC-hWP"/>
+                        <outlet property="square" destination="oZK-lI-ETN" id="SX5-Jx-pVF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ykk-MH-EFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="637.33133433283365"/>
+        </scene>
+    </scenes>
+</document>

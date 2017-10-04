@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qWl-Zb-N6q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bubu-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Screens6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.54360108679167984" green="1" blue="0.63450055991306509" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bubu" id="b1l-HV-SBs">
+                        <barButtonItem key="rightBarButtonItem" title="to groot" id="EzM-7y-NPG">
+                            <connections>
+                                <segue destination="p12-0r-fDT" kind="show" identifier="toGroot" id="0I9-OI-lyD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="99"/>
+        </scene>
+        <!--I am Groot-->
+        <scene sceneID="RLX-eZ-uDr">
+            <objects>
+                <viewController id="p12-0r-fDT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qAN-JN-2pK"/>
+                        <viewControllerLayoutGuide type="bottom" id="4RI-mg-5eo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zsb-bp-G4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.70642188819845897" green="0.97443607211220662" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="I am Groot" id="1YP-lX-bWx">
+                        <barButtonItem key="backBarButtonItem" title="Groot" id="2IQ-EM-Z0W"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Deadpool" id="h4i-bT-GBQ">
+                                <connections>
+                                    <segue destination="GKv-Wb-Pes" kind="show" identifier="toDeadpool" id="PXs-d3-X8y"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="R" id="LHc-oY-uoW">
+                                <connections>
+                                    <segue destination="1WY-Ws-Jbe" kind="show" id="huh-HW-Dq5"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ciu-4W-zzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="100"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rES-LT-ZCP">
+            <objects>
+                <viewController id="1WY-Ws-Jbe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WV0-Ob-APf"/>
+                        <viewControllerLayoutGuide type="bottom" id="d7C-bD-KfV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BIm-UM-yfR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ted-Cc-0gt">
+                                <rect key="frame" x="16" y="312.5" width="343" height="42"/>
+                                <color key="backgroundColor" red="0.85125167071102292" green="0.95150582901554404" blue="0.52524887076293336" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ezV-2o-b4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.90955744028108509" green="0.95150582901554404" blue="0.68461147619292928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90667822892672478" green="0.93711291398039231" blue="0.95150582901554404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ted-Cc-0gt" firstAttribute="centerY" secondItem="BIm-UM-yfR" secondAttribute="centerY" id="Piv-h5-GXu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ted-Cc-0gt" secondAttribute="leading" id="WbB-tQ-Ek9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ted-Cc-0gt" secondAttribute="trailing" id="hCT-dG-Ui0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LoJ-38-bk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2421.5999999999999" y="450.22488755622192"/>
+        </scene>
+        <!--Deadpool-->
+        <scene sceneID="sfv-nM-oBy">
+            <objects>
+                <viewController id="GKv-Wb-Pes" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="axg-Nd-Sby"/>
+                        <viewControllerLayoutGuide type="bottom" id="OSo-Lf-lFw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bB6-Gg-GCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deadpool" translatesAutoresizingMaskIntoConstraints="NO" id="pHU-KH-Un3">
+                                <rect key="frame" x="37.5" y="221" width="300" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pHU-KH-Un3" secondAttribute="height" multiplier="4:3" id="NZK-b9-kdh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.056176775495154874" blue="0.10597688805742012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pHU-KH-Un3" firstAttribute="width" secondItem="bB6-Gg-GCq" secondAttribute="width" multiplier="0.8" id="2gl-pO-dYD"/>
+                            <constraint firstItem="pHU-KH-Un3" firstAttribute="centerX" secondItem="bB6-Gg-GCq" secondAttribute="centerX" id="GYP-B1-56S"/>
+                            <constraint firstItem="pHU-KH-Un3" firstAttribute="centerY" secondItem="bB6-Gg-GCq" secondAttribute="centerY" id="OBF-6Q-pLS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Deadpool" id="B7J-Bb-vV0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mb-xq-OSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2422" y="-246"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uI8-ya-cuz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qWl-Zb-N6q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r7f-N2-ESt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gsR-ss-H1j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7D-Dm-B8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="101"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="deadpool" width="800" height="600"/>
+    </resources>
+</document>

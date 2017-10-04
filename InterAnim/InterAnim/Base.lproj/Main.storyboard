@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InterAnim" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIR-sN-s6k">
+                                <rect key="frame" x="75" y="133.5" width="225" height="400"/>
+                                <color key="backgroundColor" red="0.67254186457390641" green="1" blue="0.68365950275141518" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Qc-N1-Xro">
+                                <rect key="frame" x="0.0" y="600.5" width="375" height="66.5"/>
+                                <color key="backgroundColor" red="0.31967466339049477" green="0.10131152981586866" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xIR-sN-s6k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4zp-MR-pwr"/>
+                            <constraint firstItem="xIR-sN-s6k" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="9AP-x0-K29"/>
+                            <constraint firstItem="9Qc-N1-Xro" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Gj7-0b-zyz"/>
+                            <constraint firstItem="xIR-sN-s6k" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="Ls7-zK-Pwc"/>
+                            <constraint firstItem="xIR-sN-s6k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NLa-E1-kLP"/>
+                            <constraint firstItem="9Qc-N1-Xro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RWz-l0-YGz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Qc-N1-Xro" secondAttribute="bottom" id="Ydv-Vh-LlF"/>
+                            <constraint firstItem="9Qc-N1-Xro" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="rmI-yf-mkq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footer" destination="9Qc-N1-Xro" id="bIf-c8-GWn"/>
+                        <outlet property="section" destination="xIR-sN-s6k" id="BWj-v9-WwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="101.19940029985008"/>
+        </scene>
+    </scenes>
+</document>

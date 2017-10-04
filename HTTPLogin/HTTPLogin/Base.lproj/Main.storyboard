@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HTTPLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-hm-eNF">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgy-Tv-N1O">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDN-Lr-Asl">
+                                <state key="normal" title="log in"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CVT-UB-8wO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tgy-Tv-N1O" firstAttribute="top" secondItem="Tfe-hm-eNF" secondAttribute="bottom" constant="8" id="8GF-7i-GqM"/>
+                            <constraint firstItem="Tfe-hm-eNF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="EX5-eO-nzs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tgy-Tv-N1O" secondAttribute="trailing" constant="-8" id="Vat-1p-dn6"/>
+                            <constraint firstItem="wDN-Lr-Asl" firstAttribute="top" secondItem="tgy-Tv-N1O" secondAttribute="bottom" constant="8" id="cXb-Md-IbJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Tfe-hm-eNF" secondAttribute="leading" id="d3x-a4-6uD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tfe-hm-eNF" secondAttribute="trailing" constant="-8" id="gmI-eh-iil"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="tgy-Tv-N1O" secondAttribute="leading" id="pJx-Kp-RmV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wDN-Lr-Asl" secondAttribute="trailing" constant="-8" id="ucu-Os-79Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="uName" destination="Tfe-hm-eNF" id="YCI-ox-gQD"/>
+                        <outlet property="uPass" destination="tgy-Tv-N1O" id="0Jc-kq-uXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="110.19490254872565"/>
+        </scene>
+        <!--Profile Controller-->
+        <scene sceneID="QWQ-HR-OmM">
+            <objects>
+                <viewController storyboardIdentifier="profile" id="UAd-Rp-gOz" customClass="ProfileController" customModule="HTTPLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iSf-Sa-bBG"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Qd-Au-beG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Cw-lt-W1z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-3w-FRV">
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4n-ap-BJx">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="l4n-ap-BJx" secondAttribute="trailing" id="0pu-BS-H7N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gxu-3w-FRV" secondAttribute="trailing" id="Fe1-vc-am6"/>
+                            <constraint firstItem="l4n-ap-BJx" firstAttribute="top" secondItem="gxu-3w-FRV" secondAttribute="bottom" constant="8" id="TqG-QT-79e"/>
+                            <constraint firstItem="gxu-3w-FRV" firstAttribute="top" secondItem="iSf-Sa-bBG" secondAttribute="bottom" constant="8" id="VtH-nP-Z3x"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gxu-3w-FRV" secondAttribute="leading" id="fDk-Fl-rln"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="l4n-ap-BJx" secondAttribute="leading" id="rnR-10-47Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="info" destination="l4n-ap-BJx" id="4Zi-MO-jxW"/>
+                        <outlet property="ttl" destination="gxu-3w-FRV" id="lyy-Yf-zJs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XhV-OQ-KmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>
